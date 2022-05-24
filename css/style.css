@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.landingpage{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.533)), url(../images/cleaners.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    /* font-family: 'Rubik', sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+.heading{
+    height: 70px;
+}
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading a{
+    text-decoration: none;
+    color: white;
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.heading a:hover{
+    color: aqua;
+    font-size: 22px;
+}
+.link .qu{
+    background-color: transparent;
+    display: inline;
+    border: 1px solid white;
+    font-size: 25px;
+}
+.heading .font{
+    font-size: 30px;
+    color: white;
+    padding: 20px 20px;
+    display: none;
+}
+.heading .cancel{
+    font-size: 20px;
+    color: black;
+    padding: 20px 20px;
+    display: none;
+}
+.jaleen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    margin-top: 150px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 20px;
+    color: rgb(237, 229, 229);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* letter-spacing: 2px; */
+    text-align: center;
+    font-weight: bolder;
+}
+.middle .avail{
+    color: rgb(237, 229, 229);
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.quote{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.quote a{
+    text-decoration: none;
+    color: black;
+    padding: 15px 100px;
+    font-size: 25px;
+    border-radius: 30px;
+    background-color: aqua;
+    font-weight: bolder;
+}
+.quote a:hover{
+    background-color: aquamarine;
+    transition: 0.5s ease-in-out;
+}
+
+
+@media(max-width: 1300px){
+    html, body{
+        overflow: hidden;
+    }
+    .heading .font{
+        display: none;
+    }
+    
+    .jaleen{
+        font-size: 30px;
+    }
+    .middle{
+        font-size: 15px;
+    }
+    .middle .avail{
+        font-size: 20px;
+    }
+}
+@media(max-width: 950px){
+    html, body{
+        overflow: hidden;
+    }
+    .heading .link{
+        display: none;  
+        background-color: white;
+        position: absolute;
+        z-index: 1;   
+    }
+    .heading .link a{
+        display: block;
+        color: black; 
+        border-radius: none;
+        border-bottom: 1px solid #ccc;
+    }
+    .heading .link .qu{
+        border-bottom: none;
+    }
+    .heading .font{
+        display: block;
+    }
+    .heading .link .cancel{
+        display: block;
+    }
+
+    .jaleen{
+        font-size: 30px;
+        margin-top: 70px;
+    }
+    .middle{
+        font-size: 10px;
+    }
+    .middle .avail{
+        font-size: 20px;
+    }
+}
